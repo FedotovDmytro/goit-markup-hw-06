@@ -90,3 +90,52 @@
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    padding: 96px 16px;
+  }
+  .portfolio-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .portfolio-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 24px) / 2);
+  }
+}

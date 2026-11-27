@@ -309,3 +309,14 @@
 .modal-button:focus {
   background-color: #404bbf;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    padding: 72px 16px 24px;
+    width: 288px;
+    max-width: calc(100% - 32px);
+    max-height: calc(100dvh - 32px);
+    height: auto;
+    overflow-y: auto;
+  }
+}

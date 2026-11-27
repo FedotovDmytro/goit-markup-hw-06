@@ -45,6 +45,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#MenuButton"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -118,6 +123,11 @@
             <li class="team-card">
               <img
                 src="./images/team-1.jpg"
+                srcset="
+                  ./images/team-1.jpg    1x,
+                  ./images/team-1@2x.jpg 2x,
+                  ./images/team-1@3x.jpg 3x
+                "
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -160,6 +170,11 @@
             <li class="team-card">
               <img
                 src="./images/team-2.jpg"
+                srcset="
+                  ./images/team-2.jpg    1x,
+                  ./images/team-2@2x.jpg 2x,
+                  ./images/team-2@3x.jpg 3x
+                "
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -202,6 +217,11 @@
             <li class="team-card">
               <img
                 src="./images/team-3.jpg"
+                srcset="
+                  ./images/team-3.jpg    1x,
+                  ./images/team-3@2x.jpg 2x,
+                  ./images/team-3@3x.jpg 3x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -244,6 +264,11 @@
             <li class="team-card">
               <img
                 src="./images/team-4.jpg"
+                srcset="
+                  ./images/team-4.jpg    1x,
+                  ./images/team-4@2x.jpg 2x,
+                  ./images/team-4@3x.jpg 3x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -578,6 +603,68 @@
 
           <button class="modal-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <button type="button" class="close-button">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="nav-mobile">
+          <ul>
+            <li>
+              <a href="#features" class="mobile-nav-link-active"> Features </a>
+            </li>
+            <li>
+              <a href="#team" class="mobile-nav-link">Team</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-address">
+          <ul>
+            <li class="mobile-mail">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="mobile-tell">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="socials">
+          <li>
+            <a href="#" class="socials-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socials-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socials-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socials-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
