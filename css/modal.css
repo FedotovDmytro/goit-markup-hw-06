@@ -30,12 +30,14 @@
 
 .modal {
   position: relative;
-
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
+  width: calc(100% - 32px);
+  max-width: 288px;
+  height: auto;
+  max-height: calc(100dvh - 32px);
 
-  width: 408px;
-  height: 582px;
+  overflow-y: auto;
 
   background-color: #fcfcfc;
   box-shadow:
@@ -310,13 +312,12 @@
   background-color: #404bbf;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 768px) {
   .modal {
-    padding: 72px 16px 24px;
-    width: 288px;
-    max-width: calc(100% - 32px);
+    padding: 72px 24px 24px;
+    width: 408px;
+    max-width: 408px;
+    height: 582px;
     max-height: calc(100dvh - 32px);
-    height: auto;
-    overflow-y: auto;
   }
 }

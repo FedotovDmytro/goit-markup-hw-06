@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
     position: fixed;
@@ -29,7 +29,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     padding: 72px 16px 40px;
     width: 100%;
@@ -46,7 +45,6 @@
     right: 24px;
   }
 
-  /* Навигация */
   .mobile-menu-content .nav-mobile {
     display: block;
     width: 100%;
@@ -89,9 +87,13 @@
     color: #2e2f42;
   }
 
-  /* Контакты */
+  .mobile-menu-bottom {
+    margin-top: auto;
+  }
+
   .mobile-address {
     font-style: normal;
+    margin-bottom: 48px;
   }
 
   .mobile-address ul {
